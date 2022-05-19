@@ -46,7 +46,11 @@
                     <?php echo htmlspecialchars((string)$item['type'])?>
                 </td>
                 <td>
-                    <?php echo htmlspecialchars($item['mobile'])?>
+                    <?php if ( 1== -1 && erLhcoreClassUser::instance()->hasAccessTo('lhwildixin','use_admin_full_phone')) : ?>
+                            <?php echo htmlspecialchars($item['mobile'])?>
+                    <?php else : ?>
+                        <?php echo htmlspecialchars(substr($item['mobile'], 0, 3) . 'XXXXXX' . substr($item['mobile'], -2)) ?>
+                    <?php endif; ?>
                 </td>
                 <td>
                     <?php echo htmlspecialchars($item['extension'])?>

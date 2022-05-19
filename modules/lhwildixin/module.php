@@ -26,3 +26,4 @@ $ViewList['deletecontact'] = array(
 );
 
 $FunctionList['use_admin'] = array('explain' => 'Allow operator to configure Wildixin');
+$FunctionList['use_admin_full_phone'] = array('explain' => 'Allow operator to see full phone number of blocked record');
