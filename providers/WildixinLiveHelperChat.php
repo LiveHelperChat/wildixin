@@ -2,6 +2,7 @@
 
 namespace LiveHelperChatExtension\wildixin\providers {
 
+    #[\AllowDynamicProperties]
     class WildixinLiveHelperChat {
 
         public static function getInstance() {
